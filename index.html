@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html style="background-image: url(./img/htmlBackground.jpg)">
+<head>
+	<title>シンデレラガールズ CD 所持チェッカー</title>	
+	<h1 ><img src="./img/16879.jpg" width="50" height="50"/>アイドルマスターシンデレラガールズ CD リスト</h1>
+</head>
+<link rel="stylesheet" type="text/css" href="./src/indexCSS.css">
+<body>	
+	<br><br>
+	<div id="selectView">
+		<h3>
+		<text>【CD一覧:</text>
+		<select id="filterTag" onchange="LoadSelectPicture()">
+			<option value="all">全て</option>
+			<option value="cm1">THE IDOLM@STER CINDERELLA MASTER 1</option>
+			<option value="cm2">THE IDOLM@STER CINDERELLA MASTER 2</option>
+			<option value="cgss">THE IDOLM@STER CINDERELLA GIRLS STARLIGHT MASTER</option>
+			<option value="anime">THE IDOLM@STER CINDERELLA GIRLS ANIMATION PROJECT</option>
+			<option value="puchi">THE IDOLM@STER CINDERELLA GIRLS LITTLE STARS!</option>
+			<option value="season">THE IDOLM@STER CINDERELLA GIRLS MASTER SEASONS</option>
+			<option value="chrord">THE IDOLM@STER CINDERELLA MASTER 3chord</option>
+			<option value="other">THE IDOLM@STER CINDERELLA GIRLS OTHER</option>
+			<option value="derepa">CINDERELLA PARTY!</option>
+			<option value="collabo">THE IDOLM@STER CINDERELLA GIRLS STARLIGHT MASTER COLLABORATION!</option>			  
+		</select>
+		<text>】</text>
+		<text id = "ownText">【所有率: 0 %】
+		</text><br>
+		</h3>
+		<svg id="selectViewSVG" width="1300" height="150">
+			<rect id="selectViewBG" width="1300" height="150" stroke="black" stroke-width="5pt" fill="#F5DEB3"/>
+		</svg>
+	</div>	
+</body>
+
+<script src="./lib/jquery-3.2.1.min.js"></script>
+<script src="./lib/d3.v3.min.js"></script>
+<script src="./src/cinderella.js"></script>
+</html>
